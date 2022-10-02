@@ -1,0 +1,30 @@
+.stepBox{
+    background-color: #fff;
+    padding: 5px 5px;
+    margin: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stepBox img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.content{
+    top: 120%;
+    position: absolute;
+    left: 20%;
+}
+.content a{
+    text-decoration: none;
+    background-color: #000;
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.content a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}

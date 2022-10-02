@@ -1,0 +1,20 @@
+.stepBox{
+    background-color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.stepBox h1{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+.stepBox p{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+.stepBox img{
+    max-width: 100%;
+    height: auto;
+}

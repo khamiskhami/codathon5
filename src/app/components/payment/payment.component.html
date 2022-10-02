@@ -1,0 +1,47 @@
+
+<div class="container-fluid mt-0" id="mained">
+    <div class="container mt-3">
+        <div class="row mt-3">
+             <div class="col-lg-2"></div>
+             <div class="col-lg-8">
+                 <mat-card class="example-card ">
+                     <div class="card mb-2 col-lg-12" style="align-items: center;">
+                         <h1> PLEASE MAKE PAYMENT HERE </h1>
+                     </div>
+                       <form #paymentForm="ngForm" (ngSubmit)="register(paymentForm)">
+                     <div class="row">
+                         <div class="col-md-6">
+                             <div class="form-group" style="padding: 10px;">
+                                 <label for="name">FULL NAME :</label>
+                                 <input type="text" #fullname (ngModel)="fullname" name="fullname" id="fullname" class="form-control" placeholder="Put Your Full Name">
+                             </div>
+                             <div class="form-group" style="padding: 10px;">
+                                 <label for="name">NATIONALITY :</label>
+                                 <input type="text" #nationality (ngModel)="nationality" name="nationality" id="nationality" class="form-control" placeholder="Put Your Nationality">
+                             </div>
+                         </div>
+             
+                         <div class="col-md-6">
+                             <div class="form-group" style="padding: 10px;">
+                                 <label for="name">PHONE NUMBER :</label>
+                                 <input type="text" #phonenumber (ngModel)="phonenumber" name="phonenumber" id="phonenumber" class="form-control" placeholder="Put Your Phone Number">
+                             </div>
+                             <div class="form-group" style="padding: 10px;">
+                                 <label for="name">AMOUNT :</label>
+                                 <input type="text" #amount (ngModel)="amount" name="amount" id="amount" class="form-control" placeholder="Put Amout want To Pay">
+                             </div>
+                             <div class="form-group" style="padding: 10px;">
+                                 <input type="submit" value="PAY" class="btn btn-success w-25 mt-4" routerLink="/viewpay" routerLinkActive="active"> &nbsp;
+                                 <input type="submit" value="CANCEL" class="btn btn-danger w-25 mt-4" routerLink="/home">
+                             </div>
+                         </div>
+                     </div>
+                         
+                     </form>
+                 </mat-card>
+             </div>
+             <div class="col lg-2"></div>
+        </div>
+     </div>
+</div>
+
